@@ -1,0 +1,21 @@
+class Car{
+//fields
+String model;
+String color;
+String type;
+int speed;
+
+//constructor
+Car(String model, String color, String type){
+this.model=model;
+this.color=color;
+this.type=type;
+}
+
+//methods
+
+int increaseSpeed(int increment){
+this.speed=this.speed+increament;
+return this.speed;
+}
+}
