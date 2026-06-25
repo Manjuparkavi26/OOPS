@@ -1,0 +1,8 @@
+import java.util.stream.IntStream;
+public class PrimeCheck {
+	public static void main(String[] args) {
+		int num =17;
+		boolean isPrime = num > 1 && IntStream.rangeClosed(2,(int) Math.sqrt(num)).noneMatch(i-> num%i==0);  // We check divisibility from 2 to √n because if a number has a factor greater than √n, the corresponding factor will be smaller than √n.
+		System.out.println(isPrime? "Prime" : "Not Prime");
+	}
+}
